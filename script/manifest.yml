@@ -1,0 +1,21 @@
+image: IMAGE_PREFIX/IMAGE_NAME:IMAGE_TAG
+tags: ['IMAGE_TAG', 'latest']
+manifests:
+  -
+    image: IMAGE_PREFIX/IMAGE_NAME-arm:IMAGE_TAG
+    tags: ['IMAGE_TAG', 'latest']
+    platform:
+      architecture: arm
+      os: linux
+  -
+    image: IMAGE_PREFIX/IMAGE_NAME-arm64:IMAGE_TAG
+    tags: ['IMAGE_TAG', 'latest']
+    platform:
+      architecture: arm64
+      os: linux
+  -
+    image: IMAGE_PREFIX/IMAGE_NAME-amd64:IMAGE_TAG
+    tags: ['IMAGE_TAG', 'latest']
+    platform:
+      architecture: amd64
+      os: linux
